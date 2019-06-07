@@ -2,5 +2,5 @@
 # Adjust vars as needed
 mgmt_user: admin
 mgmt_password: CPwins12345!
-mgmt_server: 40.85.182.112
-mgmt_fingerprint: 40:1C:F1:7E:61:7C:69:D6:30:87:FA:4C:DE:10:57:C2:D9:80:FB:41 
+mgmt_server: 10.0.1.4
+mgmt_fingerprint: 40:1C:F1:7E:61:7C:69:D6:30:87:FA:4C:DE:10:57:C2:D9:80:FB:41
