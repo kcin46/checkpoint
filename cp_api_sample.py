@@ -28,8 +28,12 @@ while(sid is None):
         print("The information you have entered is incorrect.\n")
 
 exit = 0
+first_iteration = 1
+
 while(exit == 0):
-    print("Welcome " + user)
+    if(first_iteration == 1):
+        print("Welcome " + user)
+    
     print("Configuration Options:")
     print("----------------------")
     print("(1)\tAdd Host")
@@ -40,5 +44,15 @@ while(exit == 0):
     print("(6)\tLogout\n")
     response = raw_input("Enter your choice number: ")
 
+    if(response == '1'):
+        name = raw_input("Enter Host Name: ")
+        host_addr = raw_input("\nEnter Host IP Address: ")
+        response = functions.add_host(name, host_addr, mgmt_ip, sid)
+
+    if(response == '5'):
+        functions.publish(mgmt_ip, sid)
+
     if(response == '6'):
         exit = 1
+
+    first_iteration += 1
